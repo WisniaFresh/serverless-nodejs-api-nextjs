@@ -14,14 +14,13 @@ export default function Home() {
       },
       body: JSON.stringify({
         email: "abc123@gmail.com",
-        description: "check from vercel",
       }),
     });
     setData(await response.json());
   };
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hello World v2</h1>
+      <h1>App that redirects api to custom domain api</h1>
       <button onClick={handleClick} className="bg-green-400">
         Press Me
       </button>
