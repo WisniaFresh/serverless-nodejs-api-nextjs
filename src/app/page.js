@@ -6,6 +6,7 @@ export default function Home() {
 
   const handleClick = async (e) => {
     console.log(e);
+    //POST
     const response = await fetch("/api/leads", {
       method: "POST",
       headers: {
