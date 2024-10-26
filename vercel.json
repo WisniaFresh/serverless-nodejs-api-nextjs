@@ -1,8 +1,8 @@
 {
     "rewrites": [
         { 
-            "source": "/api/leads",
-            "destination": "https://fk3te2znfk.execute-api.us-east-2.amazonaws.com/leads"
+            "source": "/api/:path*",
+            "destination": "https://fk3te2znfk.execute-api.us-east-2.amazonaws.com/api/:path"
         }
     ]
 }
